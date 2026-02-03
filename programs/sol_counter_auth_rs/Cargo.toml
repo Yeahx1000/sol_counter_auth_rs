@@ -1,3 +1,5 @@
+cargo-features = ["edition2024"]
+
 [package]
 name = "sol_counter_auth_rs"
 version = "0.1.0"
@@ -18,5 +20,4 @@ idl-build = ["anchor-lang/idl-build"]
 
 
 [dependencies]
-anchor-lang = "0.31.1"
-
+anchor-lang = "0.32.0"

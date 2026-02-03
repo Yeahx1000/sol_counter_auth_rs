@@ -1,6 +1,6 @@
-# Solana Counter Auth RS
+# Sol Counter Auth RS
 
-Solana practice.
+<!-- Solana practice. -->
 
 - account layout / serialization
 - signer checks

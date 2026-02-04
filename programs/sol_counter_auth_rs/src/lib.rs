@@ -1,7 +1,7 @@
 // on chain code.
 use anchor_lang::prelude::*;
 
-declare_id!("TO_REPLACE");
+declare_id!("FLXfECCpH4CFUUf4c9YqDrYgWf96Nm5m23i9mvxDGYD6");
 
 // won't compile without the actual program id.
 //TODO: Add actual program id.

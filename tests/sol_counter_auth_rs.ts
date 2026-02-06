@@ -34,7 +34,7 @@ describe("counter-auth-rs", () => {
     const authority = provider.wallet.publicKey;
 
     await program.methods
-      .increment()
+      .initialize(authority)
       .accounts({
         counter: counter.publicKey,
         authority: authority,
@@ -54,7 +54,6 @@ describe("counter-auth-rs", () => {
     expect(acct.count.toNumber()).to.eq(1)
 
     const intruder = Keypair.generate();
-    // TODO: confirmTRansaction is deprecated, will come back to this.
     await provider.connection.confirmTransaction(
       await provider.connection.requestAirdrop(intruder.publicKey, 1_000_000_000),
       "confirmed"

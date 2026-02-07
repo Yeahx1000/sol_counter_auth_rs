@@ -19,7 +19,6 @@ describe("counter-auth-rs", () => {
       .accounts({
         counter: counter.publicKey,
         authority: authority,
-        // systemProgram: SystemProgram.programId,
       })
       .signers([counter])
       .rpc();
@@ -117,18 +116,4 @@ describe("counter-auth-rs", () => {
 
 
   })
-
-  // const anchor = require("@coral-xyz/anchor");
-
-  // describe("sol_counter_auth_rs", () => {
-  //   // Configure the client to use the local cluster.
-  //   anchor.setProvider(anchor.AnchorProvider.env());
-
-  //   it("Is initialized!", async () => {
-  //     // Add your test here.
-  //     const program = anchor.workspace.solCounterAuthRs;
-  //     const tx = await program.methods.initialize().rpc();
-  //     console.log("Your transaction signature", tx);
-  //   });
-  // });
 });

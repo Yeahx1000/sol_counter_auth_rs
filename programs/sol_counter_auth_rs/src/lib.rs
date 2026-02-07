@@ -3,9 +3,6 @@ use anchor_lang::prelude::*;
 
 declare_id!("FLXfECCpH4CFUUf4c9YqDrYgWf96Nm5m23i9mvxDGYD6");
 
-// won't compile without the actual program id.
-//TODO: Add actual program id.
-
 #[program]
 pub mod sol_counter_auth_rs {
     use super::*;
